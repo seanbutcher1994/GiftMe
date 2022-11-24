@@ -10,28 +10,28 @@ Post.init(
             allowNull: false,
         },
         price: {
-            type: DataTypes.FLOAT,
+            type: DataTypes.DECIMAL,
             allowNull: false,
         },
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,
-            defaultValue: Datatypes.NOW,
+            defaultValue: DataTypes.NOW,
         },
-        link: {
+        url: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 isUrl: true,
             }
         },
-        user_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'user',
-                key: 'id',
-            },
-        }
+        // user_id: {
+        //     type: DataTypes.INTEGER,
+        //     references: {
+        //         model: 'user',
+        //         key: 'id',
+        //     },
+        // }
     },
     {
         sequelize,
