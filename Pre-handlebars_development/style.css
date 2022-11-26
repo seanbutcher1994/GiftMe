@@ -337,6 +337,89 @@ form .txt_field{
     font-size: xx-large;
 }
 
+.thierwishlist{ 
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 25px;
+    height: 98%;
+    overflow-y: auto;
+}
+
+.thierwishlist::-webkit-scrollbar {
+    display: none;
+  }
+
+.wl .item-feed:hover{
+    background-color: rgb(124, 34, 207);
+    height: fit-content;
+}
+
+.wl .item-feed:hover .discr{
+    display: block;
+    width: 100%;
+}
+.wl .item-feed:hover .post-date{
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.discr{
+    display: none; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item-feed {
+    background-color: rgb(105, 48, 158);
+    color: #fff;
+    height: 80px;
+    width: 97%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 35px 35px auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.mywishlist{ 
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 25px;
+    height: 98%;
+    overflow-y: auto;
+}
+
+.mywishlist::-webkit-scrollbar {
+    display: none;
+}
+
+.del{
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+
+.btn-newitem{
+    margin-left: 70%;
+    background-color: rgb(20, 139, 100);
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-newitem:hover{
+    background-color: rgb(16, 122, 87);
+}
 .x{
     display: none;
 }
