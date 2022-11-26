@@ -1,19 +1,24 @@
-<div class="card">
-  <div class="card-header">
-    <h2>Login</h2>
-  </div>
-  <form id="login-form" class="card-body">
-    <div>
-      <label for="username-input-login">Username</label>
-      <input type="text" id="username-input-login" />
+<div class="acc " id="login">
+  <h1 class="cursive acc-title">Login</h1>
+  <!-- inputs -->
+  <form method="post">
+    <!-- email -->
+    <div class="txt_field">
+      <input type="text" id="username" required>
+      <span></span>
+      <label>username</label>
     </div>
-    <div>
-      <label for="password-input-login" class="form-label">Password</label>
-      <input type="password" id="password-input-login" />
+    <!-- password -->
+    <div class="txt_field">
+      <input type="password" id="password" required>
+      <span></span>
+      <label>Password</label>
     </div>
-    <button type="submit" id="login-btn" class="btn">Login!</button>
-    <a type="button" href="/signup">Sign up instead</a>
+    <!-- log in btn -->
+    <input type="submit" value="Login" id="btnlogin">
+    <!-- sign up btn -->
+    <div class="signup_link">
+      Not a member? <a href="#">Signup</a>
+    </div>
   </form>
 </div>
-
-<script src="/javascript/login.js"></script>
