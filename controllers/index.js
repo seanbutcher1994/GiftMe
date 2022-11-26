@@ -7,10 +7,10 @@ const apiRoutes = require('./api');
 
 router.use('/', homeRoutes);
 
-router.use('/', profileRoutes);
+router.use('/profile', profileRoutes);
 
-router.use('/', feedRoutes);
+router.use('/feed', feedRoutes);
 
-router.use('/', apiRoutes);
+router.use('/api', apiRoutes);
 
 module.exports = router;

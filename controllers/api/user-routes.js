@@ -60,7 +60,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
-router.delete("/user/:id", (req, res) => {
+router.delete("/id", (req, res) => {
   User.destroy({
     where: {
       id: req.params.id
