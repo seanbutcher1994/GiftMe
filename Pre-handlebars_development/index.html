@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-</head>
+    <script src="https://kit.fontawesome.com/d534f45f0a.js" crossorigin="anonymous"></script>
 
 
 
@@ -21,12 +22,181 @@
     <div class="navbar">
         <!-- title acts as a home btn, returning the user to the feed page-->
         <button class="giftme cursive">Giftme</button>
-            <!-- log out btn -->
-            <button class="logout">logout</button>
-            <!-- profile icon takes user to the profile page -->
-            <!-- profile btn -->
-            <button class="profile">profile</button>
-            <!-- light/dark mode toggle -->
+        <!-- log out btn -->
+        <button class="logout"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></button>
+        <!-- profile icon takes user to the profile page -->
+        <!-- profile btn -->
+        <button class="profile "><i class="fa-solid fa-user fa-2xl"></i></button>
+        <!-- light/dark mode toggle -->
+    </div>
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- 70% class for FEED + MYWISHLIST + FRIENDWISHLIST + Account -->
+    <div class="seven">
+    <!-- account div -->
+    <div class="logup ">
+        <!-- log in page -->
+        <div class="acc x" id="signin">
+            <h1 class="cursive acc-title">Login</h1>
+            <!-- inputs -->
+            <form method="post">
+                <!-- email -->
+                <div class="txt_field">
+                    <input type="text" id="username" required>
+                    <span></span>
+                    <label>username</label>
+                </div>
+                <!-- password -->
+                <div class="txt_field">
+                    <input type="password" id="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <!-- log in btn -->
+                <input type="submit" value="Login" id="btnLogin">
+                <!-- sign up btn -->
+                <div class="signup_link">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- inputs for sign up -->
+
+        <div class="acc x" id="signup">
+            <!-- name -->
+            <h1 class= 'cursive acc-title'>Sign Up</h1>
+
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Name</label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Sirname</label>
+                </div>
+
+                <!-- dob -->
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>DOB</label>
+                </div>
+
+                <!-- email -->
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>email</label>
+                </div>
+
+                <!-- pasword -->
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <!-- submit -->
+                <input type="submit" value="Login">
+                <!-- sign up btn -->
+                Already a member? <a href="#">Sign in</a>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+        <div class="feed " id="feed">
+            <h2 class="titleseven cursive">Whats New?</h2>
+            <div class="feed-posts">
+                <ul class="posts">
+                    <div class="item-feed">
+                        <div class="sentc">Sean added the iPhone 14 Pro to his wishlist!</div>
+                        <div class="post-date">24/11/22</div>
+                        <div class="post-cost">$1500</div>
+                        <div class="discr"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam
+                            dolor eligendi obcaecati excepturi nesciunt animi quaerat harum maiores voluptas, quam
+                            exercitationem ipsum placeat ratione similique nam? Dolor, ipsa asperiores? Lorem, ipsum
+                            dolor sit amet consectetur adipisicing elit. Natus, sapiente ut deleniti accusantium ad sed
+                            dolore ipsum eius! Velit dicta enim aut voluptates perferendis eaque eligendi iste
+                            aspernatur quis maiores?</div>
+                    </div>
+
+                    <div class="item-feed">
+                        <div class="sentc">Sean added the iPhone 14 Pro to his wishlist!</div>
+                        <div class="post-date">24/11/22</div>
+                        <div class="post-cost">$1500</div>
+                        <div class="discr"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam
+                            dolor eligendi obcaecati excepturi nesciunt animi quaerat harum maiores voluptas, quam
+                            exercitationem ipsum placeat ratione similique nam? Dolor, ipsa asperiores? Lorem, ipsum
+                            dolor sit amet consectetur adipisicing elit. Natus, sapiente ut deleniti accusantium ad sed
+                            dolore ipsum eius! Velit dicta enim aut voluptates perferendis eaque eligendi iste
+                            aspernatur quis maiores?</div>
+                    </div>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="mywishlist x">
+            <h2 class="cursive">Your Wish List</h2>
+            <ul class="wishlist">
+                <div class="">
+                    <div class="">iPhone 14 Pro</div>
+                    <div class="">24/11/22</div>
+                    <div class="">$1500</div>
+                    <div class=""> DeepPurple 256GB</div>
+                    <button class="">X</button>
+                </div>
+                <div class="">
+                    <div class="">iPhone 14 Pro</div>
+                    <div class="">24/11/22</div>
+                    <div class="">$1500</div>
+                    <div class=""> DeepPurple 256GB</div>
+                    <button class="">X</button>
+                </div>
+            </ul>
+            <button class="">New Item!</button>
+        </div>
+
+        <div class="thierwishlist x">
+            <h2 class="">Their Wish List</h2>
+            <ul class="">
+                <div class="">
+                    <div class="">iPhone 14 Pro</div>
+                    <div class="">24/11/22</div>
+                    <div class="">$1500</div>
+                    <div class=""> DeepPurple 256GB</div>
+                </div>
+                <div class="">
+                    <div class="">iPhone 14 Pro</div>
+                    <div class="">24/11/22</div>
+                    <div class="">$1500</div>
+                    <div class=""> DeepPurple 256GB</div>
+                </div>
+        </div>
     </div>
 
 
@@ -36,206 +206,52 @@
 
 
 
+    <!-- 30% friendslist-new item -->
+    <div class="three">
+        <div class="friendslist ">
+            <input type="search" name="searchbar" class="searchbar">
+            <ul>
+                <button class="">
+                    <div class="">SB</div>
+                    <div class="">Sean Butcher</div>
+                    <div class="">7 Items</div>
+                    <div class="">Cake day:02/02/02</div>
+                </button>
+                </button>
+            </ul>
+        </div>
 
-        <!-- account div -->
-        <div class="logup x">
-            <!-- log in page -->
-            <div class="acc"  id="signin">
-                <h1>Login</h1>
-                <!-- inputs -->
-                <form method="post">
-                    <!-- email -->
-                    <div class="txt_field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>email</label>
-                    </div>
-                    <!-- password -->
-                    <div class="txt_field">
-                        <input type="password" required>
-                        <span></span>
-                        <label>Password</label>
-                    </div>
-                    <div class="pass">Forgot Password?</div>
-                    <!-- log in btn -->
-                    <input type="submit" value="Login">
-                    <!-- sign up btn -->
-                    <div class="signup_link">
-                        Not a member? <a href="#">Signup</a>
-                    </div>
-                </form>
-            </div>
-        
-        
-        
-            <!-- inputs for sign up -->
 
-                <div class="acc" id="signup">
-                    <!-- name -->
-                    <h1>Sign Up</h1>
-        
-                    <form method="post">
-                        <div class="txt_field">
-                            <input type="text" required>
-                            <span></span>
-                            <label>Name</label>
-                        </div>
-        
-                        <div class="txt_field">
-                            <input type="text" required>
-                            <span></span>
-                            <label>Sirname</label>
-                        </div>
-        
-                        <!-- dob -->
-                        <div class="txt_field">
-                            <input type="text" required>
-                            <span></span>
-                            <label>DOB</label>
-                        </div>
-        
-                        <!-- email -->
-                        <div class="txt_field">
-                            <input type="text" required>
-                            <span></span>
-                            <label>email</label>
-                        </div>
-        
-                        <!-- pasword -->
-                        <div class="txt_field">
-                            <input type="password" required>
-                            <span></span>
-                            <label>Password</label>
-                        </div>
-                        <!-- submit -->
-                        <input type="submit" value="Login">
-                        <!-- sign up btn -->
-                        Already a member? <a href="#">Sign in</a>
-                    </form>
+        <div class="newitem x">
+            <!-- name -->
+            <h1>New Item!</h1>
+
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>What is it?</label>
                 </div>
-        </div>
 
-        
-    
-    
-    
-        <!-- 70% class for FEED + MYWISHLIST + FRIENDWISHLIST -->
-        <div class="seven">
-            <div class="feed ">
-                <h2 class="titleseven cursive">Whats New?</h2>
-                <div class="feed-posts">
-                    <ul class="posts">
-                        <div class="item-feed">
-                            <div class="sentc">Sean added the iPhone 14 Pro to his wishlist!</div>
-                            <div class="post-date">24/11/22</div>
-                            <div class="post-cost">$1500</div>
-                            <div class="discr"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolor eligendi obcaecati excepturi nesciunt animi quaerat harum maiores voluptas, quam exercitationem ipsum placeat ratione similique nam? Dolor, ipsa asperiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, sapiente ut deleniti accusantium ad sed dolore ipsum eius! Velit dicta enim aut voluptates perferendis eaque eligendi iste aspernatur quis maiores?</div>
-                        </div>
-                        
-                        <div class="item-feed">
-                            <div class="sentc">Sean added the iPhone 14 Pro to his wishlist!</div>
-                            <div class="post-date">24/11/22</div>
-                            <div class="post-cost">$1500</div>
-                            <div class="discr"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolor eligendi obcaecati excepturi nesciunt animi quaerat harum maiores voluptas, quam exercitationem ipsum placeat ratione similique nam? Dolor, ipsa asperiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, sapiente ut deleniti accusantium ad sed dolore ipsum eius! Velit dicta enim aut voluptates perferendis eaque eligendi iste aspernatur quis maiores?</div>
-                        </div>
-                        
-                        
-                    </ul>
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Discription</label>
                 </div>
-            </div>
 
-
-            <div class="mywishlist x">
-                <h2 class="cursive">Your Wish List</h2>
-                <ul class="wishlist">
-                    <div class="">
-                        <div class="">iPhone 14 Pro</div>
-                        <div class="">24/11/22</div>
-                        <div class="">$1500</div>
-                        <div class=""> DeepPurple 256GB</div>
-                        <button class="">X</button>
-                    </div>
-                    <div class="">
-                        <div class="">iPhone 14 Pro</div>
-                        <div class="">24/11/22</div>
-                        <div class="">$1500</div>
-                        <div class=""> DeepPurple 256GB</div>
-                        <button class="">X</button>
-                    </div>
-                </ul>
-                <button class="">New Item!</button>
-            </div>
-
-            <div class="thierwishlist x">
-                <h2 class="">Their Wish List</h2>
-                <ul class="">
-                    <div class="">
-                        <div class="">iPhone 14 Pro</div>
-                        <div class="">24/11/22</div>
-                        <div class="">$1500</div>
-                        <div class=""> DeepPurple 256GB</div>
-                    </div>
-                    <div class="">
-                        <div class="">iPhone 14 Pro</div>
-                        <div class="">24/11/22</div>
-                        <div class="">$1500</div>
-                        <div class=""> DeepPurple 256GB</div>
-                    </div>
-            </div>  
+                <!-- dob -->
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Item-cost</label>
+                </div>
+                <input type="submit" value="Save">
+            </form>
         </div>
-        
-
-        
-    
-        
-        
-        
-        
-        <!-- 30% friendslist-new item -->
-        <div class="three">
-            <div class="friendslist ">
-                <input type="search" name="searchbar" class="searchbar">
-                <ul>
-                    <button class="">
-                        <div class="">SB</div>
-                        <div class="">Sean Butcher</div>
-                        <div class="">7 Items</div>
-                        <div class="">Cake day:02/02/02</div>
-                    </button>
-                    </button>
-                </ul>
-            </div>
 
 
-            <div class="newitem x">
-                <!-- name -->
-                <h1>New Item!</h1>
-    
-                <form method="post">
-                    <div class="txt_field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>What is it?</label>
-                    </div>
-    
-                    <div class="txt_field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>Discription</label>
-                    </div>
-
-                    <!-- dob -->
-                    <div class="txt_field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>Item-cost</label>
-                    </div>
-                    <input type="submit" value="Save">
-                </form>
-            </div>
-
-
-        </div>
+    </div>
 
 </body>
+<script src="./index.js"></script>
 </html>
