@@ -2,34 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gift Me</title>
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/public/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/d534f45f0a.js" crossorigin="anonymous"></script>
 
-<body class="flex-column min-100-vh">
-  <nav class="navbar">
-    <ul>
-      <li class="li-inline nav-item"><a href="/">Home</a></li>
-      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-      <li class="li-inline nav-item"><a href="/login">Login</a></li>
-      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
-    </ul>
-  </nav>
-  <header class="hero">
-    <h1 class="app-title"><a href="/">Gift Me</a></h1>
-  </header>
 
-  <main class="col-auto">
-    {{{body}}}
-  </main>
 
-  <footer class="flex-row justify-center">
-    &copy; The Gift Me folks
-  </footer>
+<body>
+
+
+
+
+
+    <!-- nav bar -->
+    <div class="navbar">
+        <!-- title acts as a home btn, returning the user to the feed page-->
+        <button class="giftme cursive" id="home">Giftme</button>
+        <!-- log out btn -->
+        <button class="logout"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></button>
+        <!-- profile icon takes user to the profile page -->
+        <!-- profile btn -->
+        <button class="profile" id="profilebtn"><i class="fa-solid fa-user fa-2xl"></i></button>
+        <!-- light/dark mode toggle -->
+    </div>
+
+    <main>
+      {{{body}}}
+    </main>
 </body>
-
+<script src="./index.js"></script>
 </html>
-<script src="/javascript/logout.js"></script>
