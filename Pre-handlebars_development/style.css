@@ -65,11 +65,13 @@ body{
 .three{
     grid-column:1/4 ;
     grid-row: 2/3;
+    height: 820px;
 }
 
 .seven{
     grid-column:4/13 ;
     grid-row: 2/3;
+    height: 820px;
 }
 
 .logup{
@@ -179,74 +181,86 @@ form .txt_field{
   
 
 
-
-
-.friendslist{ 
+.friendslist { 
     background-color: #fff;
     margin: 10px;
+    padding: 10px;
     border-radius: 25px;
     height: 96%;
     overflow-y: auto;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.233);
-    padding: 10px;
 }
 
-.searchbar{
-    width: 90%;
-    margin: auto;
-}
-
-.friends-list-item::-webkit-scrollbar {
-    display: none;
-  }
-
-.friends-list-item .friends-list-btn:hover{
+.friend:hover{
     background-color: rgb(124, 34, 207);
+    height: auto;
 }
 
-.friends-list-btn {
-    background-color: rgb(105, 48, 158);
-    color: #fff;
-    margin: 5px;
-    height: 80px;
-    width: 90%;
-    border-radius: 20px;
-    display: grid;
-    padding: 10px;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: repeat(6, 1fr);
-}
 
-.icon-fl {
-    background-color: aqua;
-    width: 50px;
-    height: 50px;
-    border-radius: 999px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-left: 60%;
-    grid-row-start: 1;
+.flistlength{
+    display: none; 
+    grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
+    font-size: x-large;
 }
 
-.name {
+.Bday {
+    display: none; 
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: x-large;
+}
+
+.friend:hover .fpop{
+    display: block;
+    width: 100%;
+}
+.friend {
+    background-color: rgb(105, 48, 158);
+    color: #fff;
+    height: 80px;
+    width: 97%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 79px auto;
+    grid-template-columns: 30% 80%;
+    gap: 10px;
+    border: none;
+}
+.fname{
+    font-size: 150%;
     grid-row-start: 1;
     grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 7;
-    font-weight: bold;
-    text-align: start;
-    position: relative;
-    top: 10px;
-    font-size: larger;  
+    grid-column-start: 2;
 }
-
-
-
-
+.post-cost{  
+    font-size: xx-large;  
+    font-weight: bold;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.post-date{    
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-content: end;
+}
+.titleseven{
+    margin-left: 20px;
+    font-size: xx-large;
+}
+.friendslist::-webkit-scrollbar {
+    display: none;
+  }
+/* ----------------------------------------------------------------------- */
 
 
 .feed{ 
@@ -291,7 +305,6 @@ form .txt_field{
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
-
     display: grid;
     grid-template-rows: 35px 35px auto;
     grid-template-columns: repeat(3, 1fr);
