@@ -92,6 +92,19 @@ body{
     height: auto;
     margin-top: 120px;
 }
+.newitem {
+    background-color: #fff;
+    margin: auto;
+    border-radius: 25px;
+    width: 50%;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 23%);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 120px;
+}
 
 .acc-title{
     width: 100%;
