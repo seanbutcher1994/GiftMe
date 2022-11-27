@@ -37,6 +37,13 @@ body{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.233);
 }
 
+.dashboard {
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: 11% auto;
+    grid-column:1/13 ;
+    grid-row: 2/3
+}
+
 
 .giftme{
     width: 90%;
@@ -75,7 +82,7 @@ body{
 }
 
 .logup{
-    width: 50%;
+    width: 100%;
     display: flex;
     align-content: center;
 }
@@ -83,7 +90,7 @@ body{
     background-color: #fff;
     margin: auto;
     border-radius: 25px;
-    width: 50%;
+    width: 100%;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 23%);
     padding: 10px;
     display: flex;
@@ -91,6 +98,8 @@ body{
     flex-wrap: wrap;
     height: auto;
     margin-top: 120px;
+    grid-column:2/3;
+    grid-row:2/3;
 }
 .newitem {
     background-color: #fff;
