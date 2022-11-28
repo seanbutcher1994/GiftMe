@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS giftme_db;
-
-CREATE DATABASE giftme_db;
