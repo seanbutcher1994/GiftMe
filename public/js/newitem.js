@@ -2,18 +2,19 @@ const newFormHandler = async (event) => {
     event.preventDefault();
   
     const name = document.querySelector('#newitem').value.trim();
-    const URL = document.querySelector('#URL').value.trim();
+    const url = document.querySelector('#URL').value.trim();
     const price = document.querySelector('#price').value.trim();
+    const user_id = document.querySelector('#id').value.trim();
   
-    if (name && URL && price) {
-      const response = await fetch(`/api/post`, {
-        method: 'post',
-        body: JSON.stringify({ name, URL, price }),
+    if (name && url && price && user_id) {
+      const response = await fetch('/api/post', {
+        method: 'POST',
+        body: JSON.stringify({ name, user_id, url, price }),
         headers: {
           'Content-Type': 'application/json',
         },
       });
-  
+      console.log(response)
       if (response.ok) {
         document.location.replace('/profile');
       } else {
@@ -39,7 +40,7 @@ const newFormHandler = async (event) => {
 //   };
   
   document
-    .querySelector('.new-post-form')
+    .querySelector('#savenewitembtn')
     .addEventListener('submit', newFormHandler);
   
 //   document
