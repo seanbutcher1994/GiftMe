@@ -1,0 +1,21 @@
+[
+    {
+        "name": "iPhone",
+        "price": 1500,
+        "url": "https://www.apple.com.au",
+        "user_id": "1"
+    },
+    {
+        "name": "airPods",
+        "price": 400,
+        "url": "https://www.apple.com.au",
+        "user_id": "2"
+    },
+    {
+        "name": "iMac",
+        "price": 3000,
+        "url": "https://www.apple.com.au",
+        "user_id": "3"
+    }
+    
+]

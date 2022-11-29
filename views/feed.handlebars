@@ -4,17 +4,13 @@
         <h2 class="titleseven cursive">Whats New?</h2>
         <div class="feed-posts">
             <ul class="posts">
+                   {{#each users as |user|}}
                 <div class="item-feed">
-                    <div class="sentc">Sean added the iPhone 14 Pro to his wishlist!</div>
-                    <div class="post-date">24/11/22</div>
-                    <div class="post-cost">$1500</div>
-                    <div class="discr"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam
-                        dolor eligendi obcaecati excepturi nesciunt animi quaerat harum maiores voluptas, quam
-                        exercitationem ipsum placeat ratione similique nam? Dolor, ipsa asperiores? Lorem, ipsum
-                        dolor sit amet consectetur adipisicing elit. Natus, sapiente ut deleniti accusantium ad sed
-                        dolore ipsum eius! Velit dicta enim aut voluptates perferendis eaque eligendi iste
-                        aspernatur quis maiores?</div>
+                    <div class="sentc"> {{User.username}} added {{user.name}} to their wishlist!</div>
+                    <div class="post-date">{{user.date_created}}</div>
+                    <div class="post-cost"><a href="{{user.url}}">Link</a></div>
                 </div>
+            {{/each}}
             </ul>
         </div>
     </div>
@@ -24,18 +20,17 @@
 <div class="three">
     <div class="friendslist" id="friendslist">
         <ul>
+            {{#each users as |user|}}
             <button class="friend" id="friend">
+                <a href="/{{User.username}}">
                 <div class="displaypic"><i class="fa-regular fa-circle-user fa-4x"></i></div>
-                <div class="fname">Sean Butcher</div>
-                <div class="flistlength fpop">7 Items</div>
-                <div class="Bday fpop"><i class="fa-solid fa-cake-candles"></i> : 02/02/02</div>
+                <div class="fname">{{User.username}}</div>
+                <div class="flistlength fpop">{{user.length}}</div>
+                {{!-- <div class="Bday fpop"><i class="fa-solid fa-cake-candles"></i> : 02/02/02</div> --}}
+                </a>
             </button>
-            <button class="friend">
-                <div class="displaypic"><i class="fa-regular fa-circle-user fa-4x"></i></div>
-                <div class="fname">Sean Butcher</div>
-                <div class="flistlength fpop">7 Items</div>
-                <div class="Bday fpop"><i class="fa-solid fa-cake-candles"></i> : 02/02/02</div>
-            </button>
+            {{/each}}
+ 
 
         </ul>
     </div>

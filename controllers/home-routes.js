@@ -17,17 +17,33 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/feed", async (req, res) => {
-  User.findAll({
-    include: [Post],
-  })
-  .then((dbUserData) => {
-    const users = dbUserData.map((user) => user.get({plain:true}));
-
-    res.render("feed", {users});
-  })
-  .catch((err) => {
+  try {
+    const userData = await Post.findAll({
+      include: [{
+        model: User
+      }]
+    });
+    const users = userData.map((user) => user.get({ plain:true }));
+    console.log(users);
+    res.render('feed', {users});
+    //res.status(200).json(users);
+  } catch (err) {
+    console.log(err)
     res.status(500).json(err);
-  });
+  }
+  // User.findAll({
+  //   attributes: { exclude: ['password']},
+  //   include: [{ model: Post }]
+  // })
+  // .then((dbUserData) => {
+  //   const users = dbUserData.map((user) => user.get({plain:true}));
+
+  //   res.render("feed", {users});
+  //   console.log(users)
+  // })
+  // .catch((err) => {
+  //   res.status(500).json(err);
+  // });
 })
 
 router.get("/login", (req, res) => {
@@ -51,12 +67,12 @@ router.get("/signup", (req, res) => {
 router.get('/:username', async (req, res) => {
   try {
       const userData = await User.findOne({
-          where: {
-              username: req.params.username
-          },
+          // where: {
+          //     username: req.params.username
+          // },
           include: [{ model: Post }],
       });
-      res.render('theirwishlist', userData);
+      res.render('profile', userData);
   } catch (err) {
       console.log(err)
       res.status(500).json(err);
