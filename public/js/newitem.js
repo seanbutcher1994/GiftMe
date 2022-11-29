@@ -1,10 +1,10 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#newitem').value.trim();
-    const url = document.querySelector('#URL').value.trim();
-    const price = document.querySelector('#price').value.trim();
-    const user_id = document.querySelector('#id').value.trim();
+    const name = document.querySelector('#newitem').value;
+    const url = document.querySelector('#URL').value;
+    const price = document.querySelector('#price').value;
+    const user_id = document.querySelector('#id').value;
   
     if (name && url && price && user_id) {
       const response = await fetch('/api/post', {
@@ -40,7 +40,7 @@ const newFormHandler = async (event) => {
 //   };
   
   document
-    .querySelector('#savenewitembtn')
+    .querySelector('#newitem1')
     .addEventListener('submit', newFormHandler);
   
 //   document
