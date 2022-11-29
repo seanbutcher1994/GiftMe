@@ -23,10 +23,10 @@
         <!-- title acts as a home btn, returning the user to the feed page-->
         <button class="giftme cursive" id="home">Giftme</button>
         <!-- log out btn -->
-        <button class="logout"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></button>
+        <button id="exit" class="logout"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></button>
         <!-- profile icon takes user to the profile page -->
         <!-- profile btn -->
-        <button class="profile" id="profilebtn"><i class="fa-solid fa-user fa-2xl"></i></button>
+        <a href="/profile/1" class="profile" id="profilebtn"><i class="fa-solid fa-user fa-2xl"></i></a>
         <!-- light/dark mode toggle -->
     </div>
 
@@ -34,5 +34,6 @@
       {{{body}}}
     </main>
 </body>
-<script src="./index.js"></script>
+{{!-- <script src="./index.js"></script> --}}
+<script src="/js/logout.js"></script>
 </html>
