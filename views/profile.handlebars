@@ -4,20 +4,15 @@
             <h2 class="cursive titleseven">Your Wish List<button class="btn-newitem" id="btn-newitem">New Item!</button></h2>            
             
             <ul class="wl">
+                {{#each users as |user|}}
                 <div class="item-feed">
-                    <div class="item">iPhone 14 Pro</div>
+                    <div class="item">{{user.name}}</div>
                     <div class="post-date">24/11/22</div>
                     <div class="post-cost">$1500</div>
                     <div class="discr"> DeepPurple 256GB</div>
                     <button class="del"><i class="fa-solid fa-trash fa-xl"></i></button>
                 </div>
-                <div class="item-feed">
-                    <div class="item">iPhone 14 Pro</div>
-                    <div class="post-date">24/11/22</div>
-                    <div class="post-cost">$1500</div>
-                    <div class="discr"> DeepPurple 256GB</div>
-                    <button class="del"><i class="fa-solid fa-trash fa-xl"></i></button>
-                </div>
+                {{/each}}
             </ul>
 
         </div>
@@ -26,16 +21,23 @@
 
     <div class="three">
 
-        <div class="newitem" id="newitem">
+        <div class="newitem" id="newitem3">
             <!-- name -->
             <h1 class="titleseven cursive">New Item !</h1>
 
-            <form class= "new-post-form" method="post">
+            <form id="newitem1" class= "new-post-form" method="post">
                 <div class="txt_field">
                     <input id="newitem" type="text" required>
                     <span></span>
                     <label>What is it?</label>
                 </div>
+
+                   <div class="txt_field">
+                    <input id="id" type="text" required>
+                    <span></span>
+                    <label>UserID</label>
+                </div>
+
 
                 <div class="txt_field">
                     <input id="URL" type="text" required>
@@ -55,4 +57,4 @@
 
     </div>
 
-<script src="./js/newitem.js"></script>
+<script src="/js/newitem.js"></script>

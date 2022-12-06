@@ -13,8 +13,12 @@ const loginFormHandler = async function(event) {
       });
   
       if (response.ok) {
+        // const id = await fetch(`/${usernameEl}`), {
+        //   method: 'get',
+        //   body: JSON.stringify({})
+        // }
         // If successful, redirect the browser to the profile page
-        document.location.replace('/feed');
+        document.location.replace(`/${usernameEl}`);
       } else {
         alert(response.statusText);
       }
