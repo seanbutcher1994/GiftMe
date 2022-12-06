@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
   //   .catch((err) => {
   //     res.status(500).json(err);
   //   });
-  res.send('test / route')
+  res.json('test / route')
 });
 
 router.get("/feed", async (req, res) => {
