@@ -3,18 +3,17 @@ const { Post, User } = require("../models");
 const withAuth = require('../utils/auth');
 
 router.get("/", async (req, res) => {
-  // Post.findAll({
-  //   include: [User],
-  // })
-  //   .then((dbPostData) => {
-  //     const posts = dbPostData.map((post) => post.get({ plain: true }));
+  Post.findAll({
+    include: [User],
+  })
+    .then((dbPostData) => {
+      const posts = dbPostData.map((post) => post.get({ plain: true }));
 
-  //     res.render("login", {posts, logged_in: req.session.logged_in});
-  //   })
-  //   .catch((err) => {
-  //     res.status(500).json(err);
-  //   });
-  res.status(200);
+      res.render("login", {posts, logged_in: req.session.logged_in});
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
 });
 
 router.get("/feed", async (req, res) => {
